@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   owlBotowlbot(lastWords) async {
     final OwlBot owlBot =
-        OwlBot(token: "ddf48ab8e7429fcaa67dde1fe9c89c6b29675627");
+        OwlBot(token: "08a5e3222b8be11a8bdcbaa455cb0f7ab1e7f608");
     final OwlBotResponse? res = await owlBot.define(word: lastWords);
     for (var def in res!.definitions!) {
       setState(() {
